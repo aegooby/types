@@ -1,5 +1,4 @@
 /// <reference lib="esnext.asynciterable" />
-/// <reference types="node" />
 
 declare module 'stripe' {
   namespace Stripe {
