@@ -97,9 +97,6 @@
 ///<reference path='./UsageRecords.d.ts' />
 ///<reference path='./WebhookEndpoints.d.ts' />
 
-// Added to in other modules, referenced above.
-export namespace Stripe {}
-
 export class Stripe {
   static Stripe: typeof Stripe;
 
