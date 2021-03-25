@@ -1,8 +1,6 @@
 /// <reference lib="esnext.asynciterable" />
 /// <reference types="node" />
 
-import {Agent} from 'http';
-
 declare module 'stripe' {
   namespace Stripe {
     export class StripeResource {
@@ -43,7 +41,7 @@ declare module 'stripe' {
       static MAX_BUFFERED_REQUEST_METRICS: number;
     }
     export type LatestApiVersion = '2020-08-27';
-    export type HttpAgent = Agent;
+    export type HttpAgent = unknown;
 
     export interface StripeConfig {
       /**
@@ -77,7 +75,7 @@ declare module 'stripe' {
        * Use a custom http(s) agent.
        * Useful for making requests through a proxy.
        */
-      httpAgent?: HttpAgent;
+      httpAgent?: unknown;
 
       /**
        * Request timeout in milliseconds.
