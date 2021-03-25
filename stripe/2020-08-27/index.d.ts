@@ -97,140 +97,138 @@
 ///<reference path='./UsageRecords.d.ts' />
 ///<reference path='./WebhookEndpoints.d.ts' />
 
-declare module 'stripe' {
-  // Added to in other modules, referenced above.
-  export namespace Stripe {}
+// Added to in other modules, referenced above.
+export namespace Stripe {}
 
-  export class Stripe {
-    static Stripe: typeof Stripe;
+export class Stripe {
+  static Stripe: typeof Stripe;
 
-    constructor(apiKey: string, config: Stripe.StripeConfig);
+  constructor(apiKey: string, config: Stripe.StripeConfig);
 
-    setAppInfo(info: Stripe.AppInfo): void;
+  setAppInfo(info: Stripe.AppInfo): void;
 
-    StripeResource: Stripe.StripeResource;
+  StripeResource: Stripe.StripeResource;
 
-    /**
-     * Top Level Resources
-     */
-    accounts: Stripe.AccountsResource;
-    accountLinks: Stripe.AccountLinksResource;
-    applePayDomains: Stripe.ApplePayDomainsResource;
-    applicationFees: Stripe.ApplicationFeesResource;
-    balance: Stripe.BalanceResource;
-    balanceTransactions: Stripe.BalanceTransactionsResource;
-    charges: Stripe.ChargesResource;
-    countrySpecs: Stripe.CountrySpecsResource;
-    coupons: Stripe.CouponsResource;
-    creditNotes: Stripe.CreditNotesResource;
-    customers: Stripe.CustomersResource;
-    disputes: Stripe.DisputesResource;
-    ephemeralKeys: Stripe.EphemeralKeysResource;
-    events: Stripe.EventsResource;
-    exchangeRates: Stripe.ExchangeRatesResource;
-    files: Stripe.FilesResource;
-    fileLinks: Stripe.FileLinksResource;
-    invoices: Stripe.InvoicesResource;
-    invoiceItems: Stripe.InvoiceItemsResource;
-    issuerFraudRecords: Stripe.IssuerFraudRecordsResource;
-    mandates: Stripe.MandatesResource;
-    orders: Stripe.OrdersResource;
-    orderReturns: Stripe.OrderReturnsResource;
-    paymentIntents: Stripe.PaymentIntentsResource;
-    paymentMethods: Stripe.PaymentMethodsResource;
-    payouts: Stripe.PayoutsResource;
-    plans: Stripe.PlansResource;
-    prices: Stripe.PricesResource;
-    products: Stripe.ProductsResource;
-    promotionCodes: Stripe.PromotionCodesResource;
-    refunds: Stripe.RefundsResource;
-    reviews: Stripe.ReviewsResource;
-    setupAttempts: Stripe.SetupAttemptsResource;
-    setupIntents: Stripe.SetupIntentsResource;
-    skus: Stripe.SkusResource;
-    sources: Stripe.SourcesResource;
-    subscriptions: Stripe.SubscriptionsResource;
-    subscriptionItems: Stripe.SubscriptionItemsResource;
-    subscriptionSchedules: Stripe.SubscriptionSchedulesResource;
-    taxRates: Stripe.TaxRatesResource;
-    tokens: Stripe.TokensResource;
-    topups: Stripe.TopupsResource;
-    transfers: Stripe.TransfersResource;
-    webhookEndpoints: Stripe.WebhookEndpointsResource;
-    webhooks: Stripe.Webhooks;
-    oauth: Stripe.OAuthResource;
+  /**
+   * Top Level Resources
+   */
+  accounts: Stripe.AccountsResource;
+  accountLinks: Stripe.AccountLinksResource;
+  applePayDomains: Stripe.ApplePayDomainsResource;
+  applicationFees: Stripe.ApplicationFeesResource;
+  balance: Stripe.BalanceResource;
+  balanceTransactions: Stripe.BalanceTransactionsResource;
+  charges: Stripe.ChargesResource;
+  countrySpecs: Stripe.CountrySpecsResource;
+  coupons: Stripe.CouponsResource;
+  creditNotes: Stripe.CreditNotesResource;
+  customers: Stripe.CustomersResource;
+  disputes: Stripe.DisputesResource;
+  ephemeralKeys: Stripe.EphemeralKeysResource;
+  events: Stripe.EventsResource;
+  exchangeRates: Stripe.ExchangeRatesResource;
+  files: Stripe.FilesResource;
+  fileLinks: Stripe.FileLinksResource;
+  invoices: Stripe.InvoicesResource;
+  invoiceItems: Stripe.InvoiceItemsResource;
+  issuerFraudRecords: Stripe.IssuerFraudRecordsResource;
+  mandates: Stripe.MandatesResource;
+  orders: Stripe.OrdersResource;
+  orderReturns: Stripe.OrderReturnsResource;
+  paymentIntents: Stripe.PaymentIntentsResource;
+  paymentMethods: Stripe.PaymentMethodsResource;
+  payouts: Stripe.PayoutsResource;
+  plans: Stripe.PlansResource;
+  prices: Stripe.PricesResource;
+  products: Stripe.ProductsResource;
+  promotionCodes: Stripe.PromotionCodesResource;
+  refunds: Stripe.RefundsResource;
+  reviews: Stripe.ReviewsResource;
+  setupAttempts: Stripe.SetupAttemptsResource;
+  setupIntents: Stripe.SetupIntentsResource;
+  skus: Stripe.SkusResource;
+  sources: Stripe.SourcesResource;
+  subscriptions: Stripe.SubscriptionsResource;
+  subscriptionItems: Stripe.SubscriptionItemsResource;
+  subscriptionSchedules: Stripe.SubscriptionSchedulesResource;
+  taxRates: Stripe.TaxRatesResource;
+  tokens: Stripe.TokensResource;
+  topups: Stripe.TopupsResource;
+  transfers: Stripe.TransfersResource;
+  webhookEndpoints: Stripe.WebhookEndpointsResource;
+  webhooks: Stripe.Webhooks;
+  oauth: Stripe.OAuthResource;
 
-    /**
-     * Namespaced Resources
-     */
-    billingPortal: {
-      configurations: Stripe.BillingPortal.ConfigurationsResource;
-      sessions: Stripe.BillingPortal.SessionsResource;
-    };
-    checkout: {sessions: Stripe.Checkout.SessionsResource};
-    issuing: {
-      authorizations: Stripe.Issuing.AuthorizationsResource;
-      cards: Stripe.Issuing.CardsResource;
-      cardholders: Stripe.Issuing.CardholdersResource;
-      disputes: Stripe.Issuing.DisputesResource;
-      transactions: Stripe.Issuing.TransactionsResource;
-    };
-    radar: {
-      earlyFraudWarnings: Stripe.Radar.EarlyFraudWarningsResource;
-      valueLists: Stripe.Radar.ValueListsResource;
-      valueListItems: Stripe.Radar.ValueListItemsResource;
-    };
-    reporting: {
-      reportRuns: Stripe.Reporting.ReportRunsResource;
-      reportTypes: Stripe.Reporting.ReportTypesResource;
-    };
-    sigma: {scheduledQueryRuns: Stripe.Sigma.ScheduledQueryRunsResource};
-    terminal: {
-      connectionTokens: Stripe.Terminal.ConnectionTokensResource;
-      locations: Stripe.Terminal.LocationsResource;
-      readers: Stripe.Terminal.ReadersResource;
-    };
+  /**
+   * Namespaced Resources
+   */
+  billingPortal: {
+    configurations: Stripe.BillingPortal.ConfigurationsResource;
+    sessions: Stripe.BillingPortal.SessionsResource;
+  };
+  checkout: {sessions: Stripe.Checkout.SessionsResource};
+  issuing: {
+    authorizations: Stripe.Issuing.AuthorizationsResource;
+    cards: Stripe.Issuing.CardsResource;
+    cardholders: Stripe.Issuing.CardholdersResource;
+    disputes: Stripe.Issuing.DisputesResource;
+    transactions: Stripe.Issuing.TransactionsResource;
+  };
+  radar: {
+    earlyFraudWarnings: Stripe.Radar.EarlyFraudWarningsResource;
+    valueLists: Stripe.Radar.ValueListsResource;
+    valueListItems: Stripe.Radar.ValueListItemsResource;
+  };
+  reporting: {
+    reportRuns: Stripe.Reporting.ReportRunsResource;
+    reportTypes: Stripe.Reporting.ReportTypesResource;
+  };
+  sigma: {scheduledQueryRuns: Stripe.Sigma.ScheduledQueryRunsResource};
+  terminal: {
+    connectionTokens: Stripe.Terminal.ConnectionTokensResource;
+    locations: Stripe.Terminal.LocationsResource;
+    readers: Stripe.Terminal.ReadersResource;
+  };
 
-    /**
-     * API Errors
-     */
-    static errors: Stripe.Errors;
-    errors: Stripe.Errors;
+  /**
+   * API Errors
+   */
+  static errors: Stripe.Errors;
+  errors: Stripe.Errors;
 
-    on(event: 'request', handler: (event: Stripe.RequestEvent) => void): void;
-    on(event: 'response', handler: (event: Stripe.ResponseEvent) => void): void;
-    once(event: 'request', handler: (event: Stripe.RequestEvent) => void): void;
-    once(
-      event: 'response',
-      handler: (event: Stripe.ResponseEvent) => void
-    ): void;
-    off(event: 'request', handler: (event: Stripe.RequestEvent) => void): void;
-    off(
-      event: 'response',
-      handler: (event: Stripe.ResponseEvent) => void
-    ): void;
+  on(event: 'request', handler: (event: Stripe.RequestEvent) => void): void;
+  on(event: 'response', handler: (event: Stripe.ResponseEvent) => void): void;
+  once(event: 'request', handler: (event: Stripe.RequestEvent) => void): void;
+  once(
+    event: 'response',
+    handler: (event: Stripe.ResponseEvent) => void
+  ): void;
+  off(event: 'request', handler: (event: Stripe.RequestEvent) => void): void;
+  off(
+    event: 'response',
+    handler: (event: Stripe.ResponseEvent) => void
+  ): void;
 
-    setProtocol(protocol: string): void;
+  setProtocol(protocol: string): void;
 
-    /** @deprecated Please use the StripeConfig object instead. */
-    setHost(host: string, port?: string | number, protocol?: string): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setHost(host: string, port?: string | number, protocol?: string): void;
 
-    /** @deprecated Please use the StripeConfig object instead. */
-    setPort(port: string | number): void;
-    /** @deprecated Please use the StripeConfig object instead. */
-    setApiVersion(version: Stripe.LatestApiVersion): void;
-    /** @deprecated Please use the StripeConfig object instead. */
-    setApiKey(key: string): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setPort(port: string | number): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setApiVersion(version: Stripe.LatestApiVersion): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setApiKey(key: string): void;
 
-    /** @deprecated Please use the StripeConfig object instead. */
-    setTimeout(timeout?: number): void;
-    /** @deprecated Please use the StripeConfig object instead. */
-    setMaxNetworkRetries(maxNetworkRetries: number): void;
-    /** @deprecated Please use the StripeConfig object instead. */
-    setTelemetryEnabled(enabled: boolean): void;
-    /** @deprecated Please use the StripeConfig object instead. */
-    setHttpAgent(agent: Stripe.HttpAgent): void;
-  }
-
-  export default Stripe;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setTimeout(timeout?: number): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setMaxNetworkRetries(maxNetworkRetries: number): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setTelemetryEnabled(enabled: boolean): void;
+  /** @deprecated Please use the StripeConfig object instead. */
+  setHttpAgent(agent: Stripe.HttpAgent): void;
 }
+
+export default Stripe;
