@@ -1,4 +1,3 @@
-// <reference types="node" />
 
 declare module 'stripe' {
   namespace Stripe {
@@ -12,7 +11,7 @@ declare module 'stripe' {
         /**
          * Raw text body payload received from Stripe.
          */
-        payload: string | Buffer,
+        payload: string | Deno.Buffer,
 
         /**
          * Value of the `stripe-signature` header from Stripe.
@@ -24,7 +23,7 @@ declare module 'stripe' {
          * since express should never return this header as an array,
          * only a string.
          */
-        header: string | Buffer | Array<string>,
+        header: string | Deno.Buffer | Array<string>,
 
         /**
          * Your Webhook Signing Secret for this endpoint (e.g., 'whsec_...').
