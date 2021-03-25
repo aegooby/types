@@ -1,101 +1,101 @@
 // File generated from our OpenAPI spec
 
-///<reference path='../lib.d.ts' />
-///<reference path='../shared.d.ts' />
-///<reference path='../Errors.d.ts' />
-///<reference path='../OAuth.d.ts' />
-///<reference path='../Webhooks.d.ts' />
-///<reference path='./AccountLinks.d.ts' />
-///<reference path='./Accounts.d.ts' />
-///<reference path='./AlipayAccounts.d.ts' />
-///<reference path='./ApplePayDomains.d.ts' />
-///<reference path='./ApplicationFees.d.ts' />
-///<reference path='./Applications.d.ts' />
-///<reference path='./Balance.d.ts' />
-///<reference path='./BalanceTransactions.d.ts' />
-///<reference path='./BankAccounts.d.ts' />
-///<reference path='./BillingPortal/Configurations.d.ts' />
-///<reference path='./BillingPortal/Sessions.d.ts' />
-///<reference path='./BitcoinReceivers.d.ts' />
-///<reference path='./BitcoinTransactions.d.ts' />
-///<reference path='./Capabilities.d.ts' />
-///<reference path='./Cards.d.ts' />
-///<reference path='./Charges.d.ts' />
-///<reference path='./Checkout/Sessions.d.ts' />
-///<reference path='./ConnectCollectionTransfers.d.ts' />
-///<reference path='./CountrySpecs.d.ts' />
-///<reference path='./Coupons.d.ts' />
-///<reference path='./CreditNoteLineItems.d.ts' />
-///<reference path='./CreditNotes.d.ts' />
-///<reference path='./CustomerBalanceTransactions.d.ts' />
-///<reference path='./CustomerSources.d.ts' />
-///<reference path='./Customers.d.ts' />
-///<reference path='./Discounts.d.ts' />
-///<reference path='./Disputes.d.ts' />
-///<reference path='./EphemeralKeys.d.ts' />
-///<reference path='./Events.d.ts' />
-///<reference path='./ExchangeRates.d.ts' />
-///<reference path='./ExternalAccounts.d.ts' />
-///<reference path='./FeeRefunds.d.ts' />
-///<reference path='./FileLinks.d.ts' />
-///<reference path='./Files.d.ts' />
-///<reference path='./InvoiceItems.d.ts' />
-///<reference path='./InvoiceLineItems.d.ts' />
-///<reference path='./Invoices.d.ts' />
-///<reference path='./IssuerFraudRecords.d.ts' />
-///<reference path='./Issuing/Authorizations.d.ts' />
-///<reference path='./Issuing/CardDetails.d.ts' />
-///<reference path='./Issuing/Cardholders.d.ts' />
-///<reference path='./Issuing/Cards.d.ts' />
-///<reference path='./Issuing/Disputes.d.ts' />
-///<reference path='./Issuing/Transactions.d.ts' />
-///<reference path='./LineItems.d.ts' />
-///<reference path='./LoginLinks.d.ts' />
-///<reference path='./Mandates.d.ts' />
-///<reference path='./OrderItems.d.ts' />
-///<reference path='./OrderReturns.d.ts' />
-///<reference path='./Orders.d.ts' />
-///<reference path='./PaymentIntents.d.ts' />
-///<reference path='./PaymentMethods.d.ts' />
-///<reference path='./Payouts.d.ts' />
-///<reference path='./Persons.d.ts' />
-///<reference path='./Plans.d.ts' />
-///<reference path='./PlatformTaxFees.d.ts' />
-///<reference path='./Prices.d.ts' />
-///<reference path='./Products.d.ts' />
-///<reference path='./PromotionCodes.d.ts' />
-///<reference path='./Radar/EarlyFraudWarnings.d.ts' />
-///<reference path='./Radar/ValueListItems.d.ts' />
-///<reference path='./Radar/ValueLists.d.ts' />
-///<reference path='./Recipients.d.ts' />
-///<reference path='./Refunds.d.ts' />
-///<reference path='./Reporting/ReportRuns.d.ts' />
-///<reference path='./Reporting/ReportTypes.d.ts' />
-///<reference path='./ReserveTransactions.d.ts' />
-///<reference path='./Reviews.d.ts' />
-///<reference path='./SKUs.d.ts' />
-///<reference path='./SetupAttempts.d.ts' />
-///<reference path='./SetupIntents.d.ts' />
-///<reference path='./Sigma/ScheduledQueryRuns.d.ts' />
-///<reference path='./SourceMandateNotifications.d.ts' />
-///<reference path='./SourceTransactions.d.ts' />
-///<reference path='./Sources.d.ts' />
-///<reference path='./SubscriptionItems.d.ts' />
-///<reference path='./SubscriptionSchedules.d.ts' />
-///<reference path='./Subscriptions.d.ts' />
-///<reference path='./TaxDeductedAtSources.d.ts' />
-///<reference path='./TaxIds.d.ts' />
-///<reference path='./TaxRates.d.ts' />
-///<reference path='./Terminal/ConnectionTokens.d.ts' />
-///<reference path='./Terminal/Locations.d.ts' />
-///<reference path='./Terminal/Readers.d.ts' />
-///<reference path='./Tokens.d.ts' />
-///<reference path='./Topups.d.ts' />
-///<reference path='./TransferReversals.d.ts' />
-///<reference path='./Transfers.d.ts' />
-///<reference path='./UsageRecordSummaries.d.ts' />
-///<reference path='./UsageRecords.d.ts' />
-///<reference path='./WebhookEndpoints.d.ts' />
+export * from '../lib.d.ts'
+export * from '../shared.d.ts'
+export * from '../Errors.d.ts'
+export * from '../OAuth.d.ts'
+export * from '../Webhooks.d.ts'
+export * from './AccountLinks.d.ts'
+export * from './Accounts.d.ts'
+export * from './AlipayAccounts.d.ts'
+export * from './ApplePayDomains.d.ts'
+export * from './ApplicationFees.d.ts'
+export * from './Applications.d.ts'
+export * from './Balance.d.ts'
+export * from './BalanceTransactions.d.ts'
+export * from './BankAccounts.d.ts'
+export * from './BillingPortal/Configurations.d.ts'
+export * from './BillingPortal/Sessions.d.ts'
+export * from './BitcoinReceivers.d.ts'
+export * from './BitcoinTransactions.d.ts'
+export * from './Capabilities.d.ts'
+export * from './Cards.d.ts'
+export * from './Charges.d.ts'
+export * from './Checkout/Sessions.d.ts'
+export * from './ConnectCollectionTransfers.d.ts'
+export * from './CountrySpecs.d.ts'
+export * from './Coupons.d.ts'
+export * from './CreditNoteLineItems.d.ts'
+export * from './CreditNotes.d.ts'
+export * from './CustomerBalanceTransactions.d.ts'
+export * from './CustomerSources.d.ts'
+export * from './Customers.d.ts'
+export * from './Discounts.d.ts'
+export * from './Disputes.d.ts'
+export * from './EphemeralKeys.d.ts'
+export * from './Events.d.ts'
+export * from './ExchangeRates.d.ts'
+export * from './ExternalAccounts.d.ts'
+export * from './FeeRefunds.d.ts'
+export * from './FileLinks.d.ts'
+export * from './Files.d.ts'
+export * from './InvoiceItems.d.ts'
+export * from './InvoiceLineItems.d.ts'
+export * from './Invoices.d.ts'
+export * from './IssuerFraudRecords.d.ts'
+export * from './Issuing/Authorizations.d.ts'
+export * from './Issuing/CardDetails.d.ts'
+export * from './Issuing/Cardholders.d.ts'
+export * from './Issuing/Cards.d.ts'
+export * from './Issuing/Disputes.d.ts'
+export * from './Issuing/Transactions.d.ts'
+export * from './LineItems.d.ts'
+export * from './LoginLinks.d.ts'
+export * from './Mandates.d.ts'
+export * from './OrderItems.d.ts'
+export * from './OrderReturns.d.ts'
+export * from './Orders.d.ts'
+export * from './PaymentIntents.d.ts'
+export * from './PaymentMethods.d.ts'
+export * from './Payouts.d.ts'
+export * from './Persons.d.ts'
+export * from './Plans.d.ts'
+export * from './PlatformTaxFees.d.ts'
+export * from './Prices.d.ts'
+export * from './Products.d.ts'
+export * from './PromotionCodes.d.ts'
+export * from './Radar/EarlyFraudWarnings.d.ts'
+export * from './Radar/ValueListItems.d.ts'
+export * from './Radar/ValueLists.d.ts'
+export * from './Recipients.d.ts'
+export * from './Refunds.d.ts'
+export * from './Reporting/ReportRuns.d.ts'
+export * from './Reporting/ReportTypes.d.ts'
+export * from './ReserveTransactions.d.ts'
+export * from './Reviews.d.ts'
+export * from './SKUs.d.ts'
+export * from './SetupAttempts.d.ts'
+export * from './SetupIntents.d.ts'
+export * from './Sigma/ScheduledQueryRuns.d.ts'
+export * from './SourceMandateNotifications.d.ts'
+export * from './SourceTransactions.d.ts'
+export * from './Sources.d.ts'
+export * from './SubscriptionItems.d.ts'
+export * from './SubscriptionSchedules.d.ts'
+export * from './Subscriptions.d.ts'
+export * from './TaxDeductedAtSources.d.ts'
+export * from './TaxIds.d.ts'
+export * from './TaxRates.d.ts'
+export * from './Terminal/ConnectionTokens.d.ts'
+export * from './Terminal/Locations.d.ts'
+export * from './Terminal/Readers.d.ts'
+export * from './Tokens.d.ts'
+export * from './Topups.d.ts'
+export * from './TransferReversals.d.ts'
+export * from './Transfers.d.ts'
+export * from './UsageRecordSummaries.d.ts'
+export * from './UsageRecords.d.ts'
+export * from './WebhookEndpoints.d.ts'
 
 export class Stripe {
   static Stripe: typeof Stripe;
