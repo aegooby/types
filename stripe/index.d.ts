@@ -68,6 +68,7 @@ interface StripeConfig
     maxNetworkRetries?: number;
     httpAgent?: unknown | null;
     timeout?: number;
+    protocol?: "https" | "http";
     host?: string;
     port?: number;
     telemetry?: boolean;
@@ -93,8 +94,7 @@ declare class Stripe
 
     resources: typeof Stripe.resources;
     StripeResource: typeof Stripe.StripeResource;
-
-    constructor(apiKey: string, version?: string);
+    
     constructor(apiKey: string, config?: StripeConfig);
 
     accounts: Stripe.resources.Accounts;
